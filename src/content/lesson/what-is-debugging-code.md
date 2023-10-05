@@ -97,7 +97,7 @@ Here is a more detailed list:
 | Code | Meaning |
 | ------ | -------------|
 | 400 | Its a front-end issue; the backend is expecting a different format or values in your data |
-| 401 | It's a front-end issue because you are trying to request something you don't have permission to access. Did you forget to include credentials in the request? |
+| 401 | It's a front-end issue because you are trying to request something you do not have permission to access. Did you forget to include credentials in the request? |
 | 403 | Probably front-end because the credentials are included, but they may be wrong. The backend it's not allowing you to access it. |
 
 As a second source of information, and especially if the error is a `4xx`, you can check that the request payload has the expected format and values.
@@ -118,7 +118,7 @@ Lastly, if you have an error on a web server (like Express, Flask, Django, etc.)
 
 ## Narrowing down the bug
 
-If you followed the previous steps correctly, you know to what part of your code is your bug related. So stay focused, and don't guess! You have handy information about your bug; use it and pull that thread. For example: 
+If you followed the previous steps correctly, you know to what part of your code is your bug related. So stay focused, and do not guess! You have handy information about your bug; use it and pull that thread. For example: 
 
 a. Stop thinking about the back end if your bug is in the front end or vice-versa.  
 b. Wrong Syntax or TypeError? Syntax errors usually tell you which line has the issue. So look for that info and read the surrounding lines of code.  
